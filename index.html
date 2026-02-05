@@ -11,7 +11,7 @@
 
   <div class="lock-box" id="lockBox">
     <h2>🔒 Night Thoughts</h2>
-    <p>Enter my name to unlock</p>
+    <p>Enter your name to unlock</p>
     <input id="passInput" placeholder="Enter name">
     <button onclick="unlock()">Unlock</button>
   </div>
@@ -381,7 +381,7 @@
 function unlock(){
   const v = document.getElementById("passInput").value.trim().toLowerCase();
 
-  if(v === "ayansh"){
+  if(v === "shalu"){
     document.getElementById("appContent").style.display = "block";
     const lock = document.getElementById("lockScreen");
     lock.style.opacity = "0";
